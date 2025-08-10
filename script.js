@@ -39,7 +39,7 @@ function gerarReceita(numPessoas) {
     let LB = Math.ceil(numPessoas / 3) + 1;
     let CE = Math.ceil(numPessoas / 2);
     let DA = numPessoas;
-    let CF = Math.ceil(numPessoas / 3);
+    let CF = Math.ceil(numPessoas / 2);
     let FL = Math.ceil(numPessoas / 3);
     let MS = Math.ceil(numPessoas / 12);
     let MC = Math.ceil(numPessoas / 12);
