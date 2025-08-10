@@ -33,7 +33,7 @@ function gerarReceita(numPessoas) {
     let orelha = 0.025 * numPessoas;
     let bochecha = 0.025 * numPessoas;
     let bacon = 0.04 * numPessoas;
-    let feijao = 0.167 * numPessoas;
+    let feijao = 0.15 * numPessoas;
 
     let L = numPessoas;
     let LB = Math.ceil(numPessoas / 3) + 1;
