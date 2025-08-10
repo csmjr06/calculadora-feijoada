@@ -24,16 +24,16 @@ document.getElementById("btnPreparo").addEventListener("click", function() {
 function gerarReceita(numPessoas) {
     let rabo = 0.025 * numPessoas;
     let pe = 0.025 * numPessoas;
-    let joelho = 0.025 * numPessoas;
+    let joelho = 0.04 * numPessoas;
     let paio = 0.0125 * numPessoas;
     let lombo = 0.025 * numPessoas;
     let linguica = 0.0125 * numPessoas;
-    let costelinha = 0.025 * numPessoas;
+    let costelinha = 0.075 * numPessoas;
     let calabresa = 0.0125 * numPessoas;
     let orelha = 0.025 * numPessoas;
     let bochecha = 0.025 * numPessoas;
-    let bacon = 0.0125 * numPessoas;
-    let feijao = 0.625 * numPessoas;
+    let bacon = 0.04 * numPessoas;
+    let feijao = 0.167 * numPessoas;
 
     let L = numPessoas;
     let LB = Math.ceil(numPessoas / 3) + 1;
@@ -44,6 +44,7 @@ function gerarReceita(numPessoas) {
     let MS = Math.ceil(numPessoas / 12);
     let MC = Math.ceil(numPessoas / 12);
     let PD = Math.ceil(numPessoas / 6) + 1;
+    let AB = Math.ceil(numPessoas / 2);
 
     return `Ingredientes para ${numPessoas} pessoas:\n` +
            `- ${rabo.toFixed(2)} kg de rabo\n` +
@@ -67,7 +68,7 @@ function gerarReceita(numPessoas) {
            `- Q.B. açúcar\n` +
            `- Q.B. sal\n` +
            `- Q.B. pimenta do reino\n` +
-           `- AB g de arroz branco\n` +
+           `- ${AB} xícaras de arroz branco\n` +
            `- Q.B. azeite\n` +
            `- Q.B. cachaça\n` +
            `- Q.B. pimenta\n` +
