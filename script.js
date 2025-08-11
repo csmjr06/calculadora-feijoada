@@ -8,6 +8,7 @@ document.getElementById("feijoadaForm").addEventListener("submit", function(e) {
     document.getElementById("resultadoContainer").style.display = "block";
     document.getElementById("modoPreparo").classList.remove("show"); // fecha sempre no início
     document.getElementById("btnPreparo").textContent = "📜 Ver Modo de Preparo";
+    document.getElementById('btnImprimir').style.display = 'block';
 });
 
 document.getElementById("btnPreparo").addEventListener("click", function() {
@@ -19,6 +20,17 @@ document.getElementById("btnPreparo").addEventListener("click", function() {
         box.classList.add("show");
         this.textContent = "❌ Fechar Modo de Preparo";
     }
+});
+
+document.getElementById('btnImprimir').addEventListener('click', function() {
+    const conteudo = document.getElementById('resultadoContainer').innerHTML;
+    const janela = window.open('', '', 'width=800,height=600');
+    janela.document.write('<html><head><title>Receita de Feijoada</title></head><body>');
+    janela.document.write('<h1>Receita de Feijoada</h1>');
+    janela.document.write(conteudo);
+    janela.document.write('</body></html>');
+    janela.document.close();
+    janela.print();
 });
 
 function gerarReceita(numPessoas) {
