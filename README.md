@@ -15,7 +15,7 @@ Inclui também o **modo de preparo** e até **opção para imprimir a receita**!
 
 ## 🌐 Versão Online
 Acesse o projeto no GitHub Pages:  
-[🔗 Clique aqui para ver o site](https://SEU_USUARIO.github.io/calculadora-feijoada)
+[🔗 Clique aqui para ver o site](https://csmjr06.github.io/calculadora-feijoada/)
 
 ## 📂 Estrutura de Arquivos
 
